@@ -7,7 +7,7 @@
             <v-toolbar-title>Registration</v-toolbar-title>
           </v-toolbar>
           <v-card-text>
-            <v-form v-model="valid" ref="form" validation>
+            <v-form v-model="valid" ref="form" lazy-validation>
               <v-text-field prepend-icon="mdi-account" name="email" label="Email" type="email" v-model="email" :rules="emailRules"></v-text-field>
               <v-text-field prepend-icon="mdi-lock" name="password" label="Password" type="password" v-model="password" :rules="passwordRules"></v-text-field>
               <v-text-field prepend-icon="mdi-lock" name="confirm-password" label="Confirm Password" type="password" v-model="confirmPassword" :rules="confirmPasswordRules"></v-text-field>
