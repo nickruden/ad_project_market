@@ -21,16 +21,14 @@
           <v-img height="200px"></v-img>
           <v-card-title primary-title>
             <div>
-              <h3 class="headline mb0">Здесь будет заголовок</h3>
-              <div>Здесь будет описание</div>
+              <h3 class="headline mb0"> Здесь будет заголовок </h3>
+              <div> Здесь будет описание </div>
             </div>
           </v-card-title>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn text>Open</v-btn>
-            <v-btn raised color="primary">
-              Buy
-            </v-btn>
+            <v-btn text> Open </v-btn>
+            <v-btn raised color="primary"> Buy </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -77,7 +75,6 @@ export default {
   }
 }
 </script>
-
 
 <style scoped>
 .ad-link {
