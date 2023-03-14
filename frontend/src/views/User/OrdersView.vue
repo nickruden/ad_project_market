@@ -24,7 +24,7 @@
   </v-container>
 </template>
   
-  <script>
+<script>
   export default {
     name: 'OrdersView',
     date() {
@@ -33,5 +33,5 @@
       }
     }
   }
-  </script>
+</script>
   
