@@ -13,9 +13,7 @@
               </v-card-text>
               <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn color="primary" variant="text" >
-                      Open
-                  </v-btn>
+                  <v-btn color="primary" variant="text" >Open</v-btn>
                   <v-spacer></v-spacer>
               </v-card-actions>
           </v-row>
