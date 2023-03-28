@@ -24,10 +24,10 @@
 
 <script>
 export default {
-  computed: {
-   myAds() {
-      return this.$store.getters.myAds
+   computed: {
+      myAds() {
+         return this.$store.getters.myAds
+      }
    }
-  }
 };
 </script>
