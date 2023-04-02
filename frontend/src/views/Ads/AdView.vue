@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12">
         <v-card class="mt-5">
-          <v-img height="300px" src="ad.src"></v-img>
+          <v-img height="400px" :src="ad.src" cover></v-img>
           <v-card-text>
             <h1 class="text--primary mb-3">{{ ad.title }}</h1>
             <p>
@@ -25,11 +25,12 @@
 <script>
 export default {
   props: ['id'],
-  computer: {
+  computed: {
     ad() {
       const id = this.id
       return this.$store.getters.adById(id)
-    }
-  }
+		}
+	}
+
 };
 </script>
