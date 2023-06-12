@@ -60,7 +60,11 @@ export default {
           email: this.email,
           password: this.password
         }
-        this.$store.dispatch('registerUser', user)
+        this.$store.dispatch('registerUser', user).then(() => {
+          this.$router.push("/")
+        }).catch((err) => {
+          console.log(err.message)
+        })
       }
     }
   }
