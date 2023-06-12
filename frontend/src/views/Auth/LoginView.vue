@@ -48,7 +48,11 @@ export default {
           email: this.email,
           password: this.password
         }
-        console.log(user)
+        this.$store.dispatch('loginUser', user).then(() => {
+          this.$router.push("/")
+        }).catch((err) => {
+          console.log(err.message)
+        })
       }
     }
   }
