@@ -33,13 +33,13 @@
         </v-row>
         <v-row>
           <v-col cols="8">
-            <v-switch color="success" v-model="promo" label="Ad to Promo?"></v-switch>
+            <v-switch v-model="promo" label="Ad to Promo?"></v-switch>
           </v-col>
         </v-row>
         <v-row>
           <v-col cols="8">
             <v-spacer></v-spacer>
-            <v-btn color="success" @click="createAd" :loading="loading" :disabled="!valid || loading">Create Ad</v-btn>
+            <v-btn color="success" @click="createAd">Create Ad</v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -58,13 +58,6 @@ export default {
       promo: false,
     };
   },
-
-  computed: {
-    loading() {
-      return this.$store.getters.loading
-    }
-  },
-
   methods: {
     createAd() {
       if (this.$refs.form.validate()) {
