@@ -50,7 +50,7 @@ export default {
             this.editedDesc = this.ad.desc
             this.modal = false
         },
-        
+
         onSave (){
             if (this.editedTitle !== '' && this.editedDesc !== '') {
                 this.$store.dispatch('updateAd', {
