@@ -82,9 +82,9 @@
           return [
               {title:"Login", icon:"mdi-lock", url:"/login"},
               {title:"Registration",icon:"mdi-face",url:"/registration"},
-            ]}
-          }
-      },
+          ]}
+      }
+    },
 
     methods: {
       closeError () {
