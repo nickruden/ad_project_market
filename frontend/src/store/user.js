@@ -58,7 +58,11 @@ export default {
                     throw 'Упс... Ошибка логина или пароля'
                 })
             }
-        }     
+        },
+
+        logoutUser({commit}) {
+            commit('setUser', null)
+        }
     },
 	getters: {
         user(state) {
